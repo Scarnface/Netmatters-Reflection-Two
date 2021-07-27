@@ -1,0 +1,240 @@
+//HEADER
+@mixin header-row-1 {
+  .header-row-1 {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    // Positions the phone icon correctly as rotated. Floats the rest of the row right
+    a:nth-of-type(2) {
+      margin-left: auto;
+      min-width: 47.4px;
+      padding-bottom: 5px;
+    }
+    img {
+      display: block;
+      flex: 1 1 199.583px;
+    }
+  }
+}
+
+@mixin header-row-2 {
+  .header-row-2 {
+    width: 100%;
+    height: 58px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@mixin header-row-3 {
+  .header-row-3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    & > .header-services > a {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@mixin hs-colours($ID, $secondary) {
+  & {
+    & p:nth-of-type(1) {
+      color: $secondary
+    }
+  }
+  &:hover {
+    background-color: $secondary;
+    p:nth-of-type(1) {
+      color: #fff;
+    }
+  }
+}
+
+@mixin header-buttons {
+  .header-button {
+    color: #fff;
+    height: 56px;
+    margin-right: 20px;
+    border: solid 1px transparent;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 1.125rem;
+    letter-spacing: .4px;
+    line-height: 46px;
+    &:nth-of-type(1) {
+      min-width: 136.183px;
+      background-color: #4183d7;
+      &:hover {
+        background-color: #2a6ec6;
+      }
+      span {
+        padding-right: 4px;
+      }
+    }
+    &:nth-of-type(2) {
+      min-width: 144px;
+      background-color: #999aa2;
+      &:hover {
+        background-color: #7e808a;
+      }
+    }
+  }
+}
+
+@mixin header-hamburger {
+  .hamburger-button {
+    flex: 0 0 63.0167px;
+    height: 56px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+    padding: 0;
+    font-size: .75rem;
+    color: #fff;
+    background-color: $colour-primary;
+    border-color: transparent;
+    &:hover {
+      background-color: #22242e;
+    }
+  }
+  
+  // Position to more closely match original icon
+  #hamburger-title {
+    position: relative;
+    bottom: 2.5px;
+  }
+  
+  #hamburger-bars {
+    font-size: 32px;
+    // Scale to more closely match original icon
+    transform: scale(1.2, 0.8);
+  }
+}
+
+// Header search template
+@mixin header-search {
+  .search-container {
+    display: flex;
+    flex-grow: 1;
+    input {
+      min-width: 0;
+      flex: 1;
+      padding: 15px;
+      font: inherit;
+      outline: inherit;
+      font-size: 14px;
+      line-height: 1.42857143;
+    }
+    button {
+      font-size: 1.25em;
+    }
+  }
+}
+
+// Extends template for large breakpoints small search bar
+@mixin header-search-big {
+  @include header-search;
+  .search-container {
+    input, button {
+      height: 47px;
+      border: solid 2px #cecece;
+      background-color: #e5e5e5;
+    }
+    input {
+      border-right: none;
+      border-radius: 2px 0 0 2px;
+      color: #333;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    }
+    button {
+      border-left: none;
+      border-radius: 0 2px 2px 0;
+      // Right value to more closely match original icon position
+      padding: 5px 7px 5px 5px;
+    }
+  }
+}
+
+// Extends template for small breakpoints large search bar
+@mixin header-search-small {
+  @include header-search;
+  .search-container {
+    width: 237px;
+    max-width: 237px;
+    input, button {
+      height: 56px;
+      border: solid 1px #C0C0C0;
+    }
+    input {
+      border-right: none;
+      border-radius: 2px 0 0 1px;
+      color: #333;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      &:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+    }
+    button {
+      color: #fff;
+      background-color: #999aa2;
+      border-left: none;
+      border-radius: 0 3px 3px 0;
+      padding: 10px 20px;
+      font-size: 1.45em;
+      &:hover {
+        background-color: #7e808a;
+      }
+    }
+  }
+}
+
+// CARDS
+@mixin card-colours($secondary) {
+  p.card-icon, button {
+    color: #fff;
+    background-color: $secondary;
+  }
+  &:hover {
+    p.card-icon, button {
+      color: $secondary;
+      background-color: #fff;
+    }
+    &.card {
+      color: #fff;
+      background-color: $secondary;
+      h2::after {
+        border-top: 3px solid #fff;
+      }
+    }
+  }
+}
+
+// ABOUT
+@mixin about-icon-container {
+  min-width: 120px;
+  flex: 1;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 55px;
+  background-color: #262834;
+  &:first-child {
+    margin-right: 30px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

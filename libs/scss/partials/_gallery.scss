@@ -1,0 +1,55 @@
+/* ================================= 
+  GALLERY
+==================================== */
+.services-gallery {
+  // Darken Image to make text easier to read
+  background-image: linear-gradient(270deg, rgba(0,0,0,0.45), #000), url("/libs/img/home-lQs1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100% - 168px);
+}
+
+.services-gallery .container {
+  height: 100%;
+}
+
+.services-gallery-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-gallery-container {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+  h1 {
+    margin: 0 0 25px;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .4px;
+    line-height: 1.1;
+  }
+  p {
+    margin: 0 0 35px;
+    font-size: 1.25rem;
+    letter-spacing: .4px;
+    line-height: 2.25rem;
+  }
+  button {
+    color: #fff;
+    background-color: #f62459;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    line-height: 50px;
+    &:hover {
+      background-color: #e80a42;
+    }
+  }
+}
