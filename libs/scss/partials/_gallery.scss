@@ -2,54 +2,71 @@
   GALLERY
 ==================================== */
 .services-gallery {
-  // Darken Image to make text easier to read
-  background-image: linear-gradient(270deg, rgba(0,0,0,0.45), #000), url("/libs/img/home-lQs1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   height: calc(100% - 168px);
+  // overflow-x: hidden; // ! Required once everything in place
 }
 
-.services-gallery .container {
+.services-gallery-container {
+  display: flex;
+  width: 600%;
   height: 100%;
 }
 
 .services-gallery-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.services-gallery-container {
-  width: 100%;
-  color: #fff;
   text-align: center;
-  padding: 0 15px;
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
   h1 {
+    width: 100%;
     margin: 0 0 25px;
     font-size: 3rem;
     font-weight: 400;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     line-height: 1.1;
   }
   p {
+    width: 100%;
     margin: 0 0 35px;
     font-size: 1.25rem;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     line-height: 2.25rem;
   }
   button {
     color: #fff;
-    background-color: #f62459;
     border: none;
     border-radius: 3px;
     padding: 5px 20px;
     font-size: 1.25rem;
     line-height: 50px;
-    &:hover {
-      background-color: #e80a42;
-    }
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  &:nth-of-type(1) {
+    @include hero-data(1, "/libs/img/home-3wAI.jpg", #926fb1, #7e57a0, false);
+  }
+  &:nth-of-type(2) {
+    @include hero-data(2, "/libs/img/home-57sJ.jpg", #4183d7, #2a6ec6, false);
+  }
+  &:nth-of-type(3) {
+    @include hero-data(3, "/libs/img/home-5yqm.jpg", #d64541, #c42e2a, false);
+  }
+  &:nth-of-type(4) {
+    @include hero-data(4, "/libs/img/home-sqvx.jpg", #67809f, #566c88, false);
+  }
+  &:nth-of-type(5) {
+    @include hero-data(5, "/libs/img/home-JQsO.jpg", #2ecc71, #26ab5f, false);
+  }
+  &:nth-of-type(6) {
+    @include hero-data(6, "/libs/img/home-lQs1.jpg", #f62459, #e80a42, false);
   }
 }

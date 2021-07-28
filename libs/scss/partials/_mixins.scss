@@ -51,7 +51,7 @@
 @mixin hs-colours($ID, $secondary) {
   & {
     & p:nth-of-type(1) {
-      color: $secondary
+      color: $secondary;
     }
   }
   &:hover {
@@ -71,7 +71,7 @@
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 1.125rem;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     line-height: 46px;
     &:nth-of-type(1) {
       min-width: 136.183px;
@@ -102,7 +102,7 @@
     margin-bottom: auto;
     border-radius: 3px;
     padding: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: $colour-primary;
     border-color: transparent;
@@ -110,13 +110,13 @@
       background-color: #22242e;
     }
   }
-  
+
   // Position to more closely match original icon
   #hamburger-title {
     position: relative;
     bottom: 2.5px;
   }
-  
+
   #hamburger-bars {
     font-size: 32px;
     // Scale to more closely match original icon
@@ -148,7 +148,8 @@
 @mixin header-search-big {
   @include header-search;
   .search-container {
-    input, button {
+    input,
+    button {
       height: 47px;
       border: solid 2px #cecece;
       background-color: #e5e5e5;
@@ -157,7 +158,7 @@
       border-right: none;
       border-radius: 2px 0 0 2px;
       color: #333;
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     }
     button {
       border-left: none;
@@ -174,15 +175,16 @@
   .search-container {
     width: 237px;
     max-width: 237px;
-    input, button {
+    input,
+    button {
       height: 56px;
-      border: solid 1px #C0C0C0;
+      border: solid 1px #c0c0c0;
     }
     input {
       border-right: none;
       border-radius: 2px 0 0 1px;
       color: #333;
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
       &:focus {
         box-shadow: 0 0 5px rgba(81, 203, 238, 1);
         border: 1px solid rgba(81, 203, 238, 1);
@@ -202,14 +204,35 @@
   }
 }
 
+// GALLERY
+@mixin hero-data($nth, $img, $primary, $secondary, $large: false) {
+  & {
+    @if $large {
+      background-image: linear-gradient(270deg, transparent 25%, #000),
+        url(#{$img});
+    } @else {
+      background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000),
+        url(#{$img});
+    }
+    button {
+      background-color: $primary;
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+  }
+}
+
 // CARDS
 @mixin card-colours($secondary) {
-  p.card-icon, button {
+  p.card-icon,
+  button {
     color: #fff;
     background-color: $secondary;
   }
   &:hover {
-    p.card-icon, button {
+    p.card-icon,
+    button {
       color: $secondary;
       background-color: #fff;
     }

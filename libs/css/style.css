@@ -211,50 +211,45 @@
   GALLERY
 ==================================== */
 .services-gallery {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url("/libs/img/home-lQs1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   height: calc(100% - 168px);
 }
 
-.services-gallery .container {
+.services-gallery-container {
+  display: flex;
+  width: 600%;
   height: 100%;
 }
 
 .services-gallery-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.services-gallery-container {
-  width: 100%;
-  color: #fff;
   text-align: center;
-  padding: 0 15px;
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
-.services-gallery-container h1 {
+.services-gallery-wrapper h1 {
+  width: 100%;
   margin: 0 0 25px;
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 1.1;
 }
 
-.services-gallery-container p {
+.services-gallery-wrapper p {
+  width: 100%;
   margin: 0 0 35px;
   font-size: 1.25rem;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 2.25rem;
 }
 
-.services-gallery-container button {
+.services-gallery-wrapper button {
   color: #fff;
-  background-color: #f62459;
   border: none;
   border-radius: 3px;
   padding: 5px 20px;
@@ -262,7 +257,83 @@
   line-height: 50px;
 }
 
-.services-gallery-container button:hover {
+.services-gallery-wrapper .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.services-gallery-wrapper:nth-of-type(1) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-3wAI.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(1) button {
+  background-color: #926fb1;
+}
+
+.services-gallery-wrapper:nth-of-type(1) button:hover {
+  background-color: #7e57a0;
+}
+
+.services-gallery-wrapper:nth-of-type(2) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-57sJ.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(2) button {
+  background-color: #4183d7;
+}
+
+.services-gallery-wrapper:nth-of-type(2) button:hover {
+  background-color: #2a6ec6;
+}
+
+.services-gallery-wrapper:nth-of-type(3) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-5yqm.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(3) button {
+  background-color: #d64541;
+}
+
+.services-gallery-wrapper:nth-of-type(3) button:hover {
+  background-color: #c42e2a;
+}
+
+.services-gallery-wrapper:nth-of-type(4) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-sqvx.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(4) button {
+  background-color: #67809f;
+}
+
+.services-gallery-wrapper:nth-of-type(4) button:hover {
+  background-color: #566c88;
+}
+
+.services-gallery-wrapper:nth-of-type(5) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-JQsO.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(5) button {
+  background-color: #2ecc71;
+}
+
+.services-gallery-wrapper:nth-of-type(5) button:hover {
+  background-color: #26ab5f;
+}
+
+.services-gallery-wrapper:nth-of-type(6) {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-lQs1.jpg);
+}
+
+.services-gallery-wrapper:nth-of-type(6) button {
+  background-color: #f62459;
+}
+
+.services-gallery-wrapper:nth-of-type(6) button:hover {
   background-color: #e80a42;
 }
 
@@ -356,12 +427,14 @@
   cursor: pointer;
 }
 
-#card-one p.card-icon, #card-one button {
+#card-one p.card-icon,
+#card-one button {
   color: #fff;
   background-color: #67809f;
 }
 
-#card-one:hover p.card-icon, #card-one:hover button {
+#card-one:hover p.card-icon,
+#card-one:hover button {
   color: #67809f;
   background-color: #fff;
 }
@@ -375,12 +448,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-two p.card-icon, #card-two button {
+#card-two p.card-icon,
+#card-two button {
   color: #fff;
   background-color: #4183d7;
 }
 
-#card-two:hover p.card-icon, #card-two:hover button {
+#card-two:hover p.card-icon,
+#card-two:hover button {
   color: #4183d7;
   background-color: #fff;
 }
@@ -394,12 +469,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-three p.card-icon, #card-three button {
+#card-three p.card-icon,
+#card-three button {
   color: #fff;
   background-color: #2ecc71;
 }
 
-#card-three:hover p.card-icon, #card-three:hover button {
+#card-three:hover p.card-icon,
+#card-three:hover button {
   color: #2ecc71;
   background-color: #fff;
 }
@@ -413,12 +490,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-four p.card-icon, #card-four button {
+#card-four p.card-icon,
+#card-four button {
   color: #fff;
   background-color: #d64541;
 }
 
-#card-four:hover p.card-icon, #card-four:hover button {
+#card-four:hover p.card-icon,
+#card-four:hover button {
   color: #d64541;
   background-color: #fff;
 }
@@ -432,12 +511,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-five p.card-icon, #card-five button {
+#card-five p.card-icon,
+#card-five button {
   color: #fff;
   background-color: #926fb1;
 }
 
-#card-five:hover p.card-icon, #card-five:hover button {
+#card-five:hover p.card-icon,
+#card-five:hover button {
   color: #926fb1;
   background-color: #fff;
 }
@@ -451,12 +532,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-six p.card-icon, #card-six button {
+#card-six p.card-icon,
+#card-six button {
   color: #fff;
   background-color: #f62459;
 }
 
-#card-six:hover p.card-icon, #card-six:hover button {
+#card-six:hover p.card-icon,
+#card-six:hover button {
   color: #f62459;
   background-color: #fff;
 }
@@ -470,12 +553,14 @@
   border-top: 3px solid #fff;
 }
 
-#card-seven p.card-icon, #card-seven button {
+#card-seven p.card-icon,
+#card-seven button {
   color: #fff;
   background-color: #926fb1;
 }
 
-#card-seven:hover p.card-icon, #card-seven:hover button {
+#card-seven:hover p.card-icon,
+#card-seven:hover button {
   color: #926fb1;
   background-color: #fff;
 }
@@ -1116,7 +1201,7 @@
     margin-bottom: auto;
     border-radius: 3px;
     padding: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: #333645;
     border-color: transparent;
@@ -1148,7 +1233,8 @@
   .header .search-container button {
     font-size: 1.25em;
   }
-  .header .search-container input, .header .search-container button {
+  .header .search-container input,
+  .header .search-container button {
     height: 47px;
     border: solid 2px #cecece;
     background-color: #e5e5e5;
@@ -1167,7 +1253,7 @@
   #search-small {
     display: none;
   }
-  .news-card:nth-child(-n+2) {
+  .news-card:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
   .partners,
@@ -1218,9 +1304,10 @@
     width: 237px;
     max-width: 237px;
   }
-  .header .search-container input, .header .search-container button {
+  .header .search-container input,
+  .header .search-container button {
     height: 56px;
-    border: solid 1px #C0C0C0;
+    border: solid 1px #c0c0c0;
   }
   .header .search-container input {
     border-right: none;
@@ -1251,7 +1338,7 @@
     margin-bottom: auto;
     border-radius: 3px;
     padding: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: #333645;
     border-color: transparent;
@@ -1283,11 +1370,11 @@
   .services-gallery {
     height: calc(100% - 110px);
   }
-  .card:nth-child(-n+3) {
+  .card:nth-child(-n + 3) {
     width: 750px;
     height: 290px;
   }
-  .card:nth-child(n+4) {
+  .card:nth-child(n + 4) {
     width: 345px;
     height: 312px;
   }
@@ -1368,9 +1455,10 @@
     width: 237px;
     max-width: 237px;
   }
-  .header .search-container input, .header .search-container button {
+  .header .search-container input,
+  .header .search-container button {
     height: 56px;
-    border: solid 1px #C0C0C0;
+    border: solid 1px #c0c0c0;
   }
   .header .search-container input {
     border-right: none;
@@ -1401,7 +1489,7 @@
     margin-bottom: auto;
     border-radius: 3px;
     padding: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: #333645;
     border-color: transparent;
@@ -1425,7 +1513,7 @@
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 1.125rem;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     line-height: 46px;
   }
   .header .header-button:nth-of-type(1) {
@@ -1466,17 +1554,73 @@
     border-radius: 3px;
   }
   .services-gallery {
-    background-image: linear-gradient(270deg, transparent 25%, #000), url("/libs/img/home-lQs1.jpg");
     height: calc(100% - 209px);
   }
-  .services-gallery-container {
+  .services-gallery-wrapper {
     text-align: left;
   }
-  .card:nth-child(-n+3) {
+  .services-gallery-wrapper:nth-of-type(1) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-3wAI.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(1) button {
+    background-color: #926fb1;
+  }
+  .services-gallery-wrapper:nth-of-type(1) button:hover {
+    background-color: #7e57a0;
+  }
+  .services-gallery-wrapper:nth-of-type(2) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-57sJ.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(2) button {
+    background-color: #4183d7;
+  }
+  .services-gallery-wrapper:nth-of-type(2) button:hover {
+    background-color: #2a6ec6;
+  }
+  .services-gallery-wrapper:nth-of-type(3) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-5yqm.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(3) button {
+    background-color: #d64541;
+  }
+  .services-gallery-wrapper:nth-of-type(3) button:hover {
+    background-color: #c42e2a;
+  }
+  .services-gallery-wrapper:nth-of-type(4) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-sqvx.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(4) button {
+    background-color: #67809f;
+  }
+  .services-gallery-wrapper:nth-of-type(4) button:hover {
+    background-color: #566c88;
+  }
+  .services-gallery-wrapper:nth-of-type(5) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-JQsO.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(5) button {
+    background-color: #2ecc71;
+  }
+  .services-gallery-wrapper:nth-of-type(5) button:hover {
+    background-color: #26ab5f;
+  }
+  .services-gallery-wrapper:nth-of-type(6) {
+    background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-lQs1.jpg);
+  }
+  .services-gallery-wrapper:nth-of-type(6) button {
+    background-color: #f62459;
+  }
+  .services-gallery-wrapper:nth-of-type(6) button:hover {
+    background-color: #e80a42;
+  }
+  .services-gallery-wrapper .container {
+    justify-content: left;
+  }
+  .card:nth-child(-n + 3) {
     width: 293.333px;
     height: 356px;
   }
-  .card:nth-child(n+4) {
+  .card:nth-child(n + 4) {
     width: 455px;
     height: 290px;
   }
@@ -1559,9 +1703,10 @@
     width: 237px;
     max-width: 237px;
   }
-  .header .search-container input, .header .search-container button {
+  .header .search-container input,
+  .header .search-container button {
     height: 56px;
-    border: solid 1px #C0C0C0;
+    border: solid 1px #c0c0c0;
   }
   .header .search-container input {
     border-right: none;
@@ -1592,7 +1737,7 @@
     margin-bottom: auto;
     border-radius: 3px;
     padding: 0;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: #333645;
     border-color: transparent;
@@ -1616,7 +1761,7 @@
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 1.125rem;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     line-height: 46px;
   }
   .header .header-button:nth-of-type(1) {
@@ -1667,11 +1812,11 @@
     color: #fff;
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0-";
   }
-  .card:nth-child(-n+3) {
+  .card:nth-child(-n + 3) {
     width: 370px;
     height: 312px;
   }
-  .card:nth-child(n+4) {
+  .card:nth-child(n + 4) {
     width: 270px;
     height: 312px;
   }
@@ -1681,7 +1826,7 @@
   .news-card {
     max-width: 370px;
   }
-  .news-card:nth-child(-n+2) {
+  .news-card:nth-child(-n + 2) {
     margin-right: 30px;
     box-shadow: 50px 20px 20px -20px rgba(0, 0, 0, 0.05);
   }

@@ -17,7 +17,7 @@
   }
 
   // NEWS
-  .news-card:nth-child(-n+2) {
+  .news-card:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 
@@ -36,7 +36,7 @@
   .container {
     width: 750px;
   }
-  
+
   //HEADER
   .header {
     @include header-v2;
@@ -56,8 +56,8 @@
   }
 
   #logo-img {
-      max-width: 345px;
-      margin-top: 0;
+    max-width: 345px;
+    margin-top: 0;
   }
 
   // GALERY
@@ -67,11 +67,11 @@
 
   // CARDS
   .card {
-    &:nth-child(-n+3) {
+    &:nth-child(-n + 3) {
       width: 750px;
       height: 290px;
     }
-    &:nth-child(n+4) {
+    &:nth-child(n + 4) {
       width: 345px;
       height: 312px;
     }
@@ -82,7 +82,7 @@
     max-width: 345px;
     &:nth-child(1) {
       margin-right: 30px;
-      box-shadow:  50px 20px 20px -20px rgba(0,0,0,0.05); 
+      box-shadow: 50px 20px 20px -20px rgba(0, 0, 0, 0.05);
     }
   }
 
@@ -108,7 +108,7 @@
   .container {
     width: 970px;
   }
-  
+
   //HEADER
   .header {
     @include header-v3;
@@ -140,21 +140,41 @@
 
   // GALERY
   .services-gallery {
-    background-image: linear-gradient(270deg, transparent 25%, #000), url("/libs/img/home-lQs1.jpg");
     height: calc(100% - 209px);
   }
 
-  .services-gallery-container {
+  .services-gallery-wrapper {
     text-align: left;
+    &:nth-of-type(1) {
+      @include hero-data(1, "/libs/img/home-3wAI.jpg", #926fb1, #7e57a0, true);
+    }
+    &:nth-of-type(2) {
+      @include hero-data(2, "/libs/img/home-57sJ.jpg", #4183d7, #2a6ec6, true);
+    }
+    &:nth-of-type(3) {
+      @include hero-data(3, "/libs/img/home-5yqm.jpg", #d64541, #c42e2a, true);
+    }
+    &:nth-of-type(4) {
+      @include hero-data(4, "/libs/img/home-sqvx.jpg", #67809f, #566c88, true);
+    }
+    &:nth-of-type(5) {
+      @include hero-data(5, "/libs/img/home-JQsO.jpg", #2ecc71, #26ab5f, true);
+    }
+    &:nth-of-type(6) {
+      @include hero-data(6, "/libs/img/home-lQs1.jpg", #f62459, #e80a42, true);
+    }
+    .container {
+      justify-content: left;
+    }
   }
 
   // CARDS
   .card {
-    &:nth-child(-n+3) {
+    &:nth-child(-n + 3) {
       width: 293.333px;
       height: 356px;
     }
-    &:nth-child(n+4) {
+    &:nth-child(n + 4) {
       width: 455px;
       height: 290px;
     }
@@ -194,7 +214,7 @@
   .container {
     width: 1200px;
   }
-  
+
   //HEADER
   .header {
     @include header-v3;
@@ -239,11 +259,11 @@
 
   // CARDS
   .card {
-    &:nth-child(-n+3) {
+    &:nth-child(-n + 3) {
       width: 370px;
       height: 312px;
     }
-    &:nth-child(n+4) {
+    &:nth-child(n + 4) {
       width: 270px;
       height: 312px;
     }
@@ -257,9 +277,9 @@
   // NEWS
   .news-card {
     max-width: 370px;
-    &:nth-child(-n+2) {
+    &:nth-child(-n + 2) {
       margin-right: 30px;
-      box-shadow:  50px 20px 20px -20px rgba(0,0,0,0.05); 
+      box-shadow: 50px 20px 20px -20px rgba(0, 0, 0, 0.05);
     }
   }
 
