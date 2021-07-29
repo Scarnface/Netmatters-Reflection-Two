@@ -80,7 +80,7 @@
         background-color: #2a6ec6;
       }
       span {
-        padding-right: 4px;
+        padding-right: 8px;
       }
     }
     &:nth-of-type(2) {
@@ -88,6 +88,9 @@
       background-color: #999aa2;
       &:hover {
         background-color: #7e808a;
+      }
+      span {
+        padding-right: 8px;
       }
     }
   }
@@ -205,7 +208,7 @@
 }
 
 // GALLERY
-@mixin hero-data($nth, $img, $primary, $secondary, $large: false) {
+@mixin hero-data($img, $primary, $secondary, $large: false) {
   & {
     @if $large {
       background-image: linear-gradient(270deg, transparent 25%, #000),

@@ -27,6 +27,13 @@
     ></script>
     <!-- NORMALIZE -->
     <link type="text/css" rel="stylesheet" href="libs/css/normalize.css" />
+    <!-- SLICK -->
+    <link type="text/css" rel="stylesheet" href="libs/js/slick/slick.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="libs/js/slick/slick-theme.css"
+    />
     <!-- CUSTOM CSS -->
     <link type="text/css" rel="stylesheet" href="libs/css/style.css" />
     <!-- FAVICON -->
@@ -56,7 +63,7 @@
               <span><i class="fas fa-mouse"></i></span>SUPPORT
             </button>
             <button id="contact-button" class="header-button" type="button">
-              <i class="fas fa-paper-plane"></i>CONTACT
+              <span><i class="fas fa-paper-plane"></i></span>CONTACT
             </button>
             <form id="search-small" class="search-container">
               <input
@@ -222,8 +229,8 @@
       GALLERY
     ================================== -->
     <section class="services-gallery">
-      <div class="services-gallery-container">
-        <div class="services-gallery-wrapper">
+      <div class="carousel">
+        <div class="slide slide1">
           <div class="container">
             <h1>WEB DESIGN</h1>
             <p>
@@ -236,7 +243,7 @@
           </div>
         </div>
 
-        <div class="services-gallery-wrapper">
+        <div class="slide slide2">
           <div class="container">
             <h1>IT SUPPORT</h1>
             <p>
@@ -249,7 +256,7 @@
           </div>
         </div>
 
-        <div class="services-gallery-wrapper">
+        <div class="slide slide3">
           <div class="container">
             <h1>TELECOMS SERVICES</h1>
             <p>
@@ -262,7 +269,7 @@
           </div>
         </div>
 
-        <div class="services-gallery-wrapper">
+        <div class="slide slide4">
           <div class="container">
             <h1>BESPOKE SOFTWARE</h1>
             <p>
@@ -275,7 +282,7 @@
           </div>
         </div>
 
-        <div class="services-gallery-wrapper">
+        <div class="slide slide5">
           <div class="container">
             <h1>DIGITAL MARKETING</h1>
             <p>
@@ -288,7 +295,7 @@
           </div>
         </div>
 
-        <div class="services-gallery-wrapper">
+        <div class="slide slide6">
           <div class="container">
             <h1>CYBER SECURITY</h1>
             <p>
@@ -824,7 +831,13 @@
       SCRIPTS
     ================================== -->
     <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- SLICK -->
+    <script type="text/javascript" src="libs/js/slick/slick.js"></script>
     <!-- CUSTOM JS -->
     <script src="libs/js/gallery.js"></script>
     <script src="libs/js/header.js"></script>

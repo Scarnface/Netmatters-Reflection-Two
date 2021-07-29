@@ -213,25 +213,25 @@
 .services-gallery {
   width: 100%;
   height: calc(100% - 168px);
+  user-select: none;
 }
 
-.services-gallery-container {
-  display: flex;
-  width: 600%;
+.carousel {
+  width: 100%;
   height: 100%;
 }
 
-.services-gallery-wrapper {
-  text-align: center;
-  width: 100vw;
-  height: 100%;
+.slide {
+  width: 100%;
+  height: calc(100vh - 168px);
+  color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  text-align: center;
 }
 
-.services-gallery-wrapper h1 {
+.slide h1 {
   width: 100%;
   margin: 0 0 25px;
   font-size: 3rem;
@@ -240,7 +240,7 @@
   line-height: 1.1;
 }
 
-.services-gallery-wrapper p {
+.slide p {
   width: 100%;
   margin: 0 0 35px;
   font-size: 1.25rem;
@@ -248,7 +248,7 @@
   line-height: 2.25rem;
 }
 
-.services-gallery-wrapper button {
+.slide button {
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -257,84 +257,102 @@
   line-height: 50px;
 }
 
-.services-gallery-wrapper .container {
+.slide .container {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.services-gallery-wrapper:nth-of-type(1) {
+.slide1 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-3wAI.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(1) button {
+.slide1 button {
   background-color: #926fb1;
 }
 
-.services-gallery-wrapper:nth-of-type(1) button:hover {
+.slide1 button:hover {
   background-color: #7e57a0;
 }
 
-.services-gallery-wrapper:nth-of-type(2) {
+.slide2 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-57sJ.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(2) button {
+.slide2 button {
   background-color: #4183d7;
 }
 
-.services-gallery-wrapper:nth-of-type(2) button:hover {
+.slide2 button:hover {
   background-color: #2a6ec6;
 }
 
-.services-gallery-wrapper:nth-of-type(3) {
+.slide3 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-5yqm.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(3) button {
+.slide3 button {
   background-color: #d64541;
 }
 
-.services-gallery-wrapper:nth-of-type(3) button:hover {
+.slide3 button:hover {
   background-color: #c42e2a;
 }
 
-.services-gallery-wrapper:nth-of-type(4) {
+.slide4 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-sqvx.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(4) button {
+.slide4 button {
   background-color: #67809f;
 }
 
-.services-gallery-wrapper:nth-of-type(4) button:hover {
+.slide4 button:hover {
   background-color: #566c88;
 }
 
-.services-gallery-wrapper:nth-of-type(5) {
+.slide5 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-JQsO.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(5) button {
+.slide5 button {
   background-color: #2ecc71;
 }
 
-.services-gallery-wrapper:nth-of-type(5) button:hover {
+.slide5 button:hover {
   background-color: #26ab5f;
 }
 
-.services-gallery-wrapper:nth-of-type(6) {
+.slide6 {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.45), #000), url(/libs/img/home-lQs1.jpg);
 }
 
-.services-gallery-wrapper:nth-of-type(6) button {
+.slide6 button {
   background-color: #f62459;
 }
 
-.services-gallery-wrapper:nth-of-type(6) button:hover {
+.slide6 button:hover {
   background-color: #e80a42;
+}
+
+.slick-dots {
+  bottom: 45px;
+}
+
+.slick-dots li button:before {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 0.3px;
 }
 
 /* ================================= 
@@ -1368,7 +1386,10 @@
     margin-top: 0;
   }
   .services-gallery {
-    height: calc(100% - 110px);
+    height: calc(100vh - 110px);
+  }
+  .slide {
+    height: calc(100vh - 110px);
   }
   .card:nth-child(-n + 3) {
     width: 750px;
@@ -1524,7 +1545,7 @@
     background-color: #2a6ec6;
   }
   .header .header-button:nth-of-type(1) span {
-    padding-right: 4px;
+    padding-right: 8px;
   }
   .header .header-button:nth-of-type(2) {
     min-width: 144px;
@@ -1532,6 +1553,9 @@
   }
   .header .header-button:nth-of-type(2):hover {
     background-color: #7e808a;
+  }
+  .header .header-button:nth-of-type(2) span {
+    padding-right: 8px;
   }
   #logo-img {
     max-width: 374.167px;
@@ -1554,67 +1578,68 @@
     border-radius: 3px;
   }
   .services-gallery {
-    height: calc(100% - 209px);
+    height: calc(100vh - 209px);
   }
-  .services-gallery-wrapper {
+  .slide {
+    height: calc(100vh - 209px);
     text-align: left;
   }
-  .services-gallery-wrapper:nth-of-type(1) {
+  .slide .container {
+    justify-content: left;
+  }
+  .slide1 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-3wAI.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(1) button {
+  .slide1 button {
     background-color: #926fb1;
   }
-  .services-gallery-wrapper:nth-of-type(1) button:hover {
+  .slide1 button:hover {
     background-color: #7e57a0;
   }
-  .services-gallery-wrapper:nth-of-type(2) {
+  .slide2 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-57sJ.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(2) button {
+  .slide2 button {
     background-color: #4183d7;
   }
-  .services-gallery-wrapper:nth-of-type(2) button:hover {
+  .slide2 button:hover {
     background-color: #2a6ec6;
   }
-  .services-gallery-wrapper:nth-of-type(3) {
+  .slide3 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-5yqm.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(3) button {
+  .slide3 button {
     background-color: #d64541;
   }
-  .services-gallery-wrapper:nth-of-type(3) button:hover {
+  .slide3 button:hover {
     background-color: #c42e2a;
   }
-  .services-gallery-wrapper:nth-of-type(4) {
+  .slide4 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-sqvx.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(4) button {
+  .slide4 button {
     background-color: #67809f;
   }
-  .services-gallery-wrapper:nth-of-type(4) button:hover {
+  .slide4 button:hover {
     background-color: #566c88;
   }
-  .services-gallery-wrapper:nth-of-type(5) {
+  .slide5 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-JQsO.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(5) button {
+  .slide5 button {
     background-color: #2ecc71;
   }
-  .services-gallery-wrapper:nth-of-type(5) button:hover {
+  .slide5 button:hover {
     background-color: #26ab5f;
   }
-  .services-gallery-wrapper:nth-of-type(6) {
+  .slide6 {
     background-image: linear-gradient(270deg, transparent 25%, #000), url(/libs/img/home-lQs1.jpg);
   }
-  .services-gallery-wrapper:nth-of-type(6) button {
+  .slide6 button {
     background-color: #f62459;
   }
-  .services-gallery-wrapper:nth-of-type(6) button:hover {
+  .slide6 button:hover {
     background-color: #e80a42;
-  }
-  .services-gallery-wrapper .container {
-    justify-content: left;
   }
   .card:nth-child(-n + 3) {
     width: 293.333px;
@@ -1772,7 +1797,7 @@
     background-color: #2a6ec6;
   }
   .header .header-button:nth-of-type(1) span {
-    padding-right: 4px;
+    padding-right: 8px;
   }
   .header .header-button:nth-of-type(2) {
     min-width: 144px;
@@ -1780,6 +1805,9 @@
   }
   .header .header-button:nth-of-type(2):hover {
     background-color: #7e808a;
+  }
+  .header .header-button:nth-of-type(2) span {
+    padding-right: 8px;
   }
   #logo-img {
     max-width: 370px;
