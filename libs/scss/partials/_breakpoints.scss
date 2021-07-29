@@ -298,3 +298,13 @@
     display: block;
   }
 }
+
+/* ================================================================== 
+  IE10+ - 'Special' Edition
+================================================================== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // GALLERY
+  .slide .container {
+    flex-direction: column;
+  }
+}

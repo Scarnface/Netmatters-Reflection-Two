@@ -249,6 +249,7 @@
 }
 
 .slide button {
+  width: 224.467px;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -325,6 +326,10 @@
 
 .slide5 button:hover {
   background-color: #26ab5f;
+}
+
+.slide5 button {
+  width: 345.183px;
 }
 
 .slide6 {
@@ -1860,6 +1865,15 @@
   }
   .news-card:last-of-type {
     display: block;
+  }
+}
+
+/* ================================================================== 
+  IE10+ - 'Special' Edition
+================================================================== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .slide .container {
+    flex-direction: column;
   }
 }
 

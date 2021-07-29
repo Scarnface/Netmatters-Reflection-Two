@@ -37,6 +37,7 @@
     line-height: 2.25rem;
   }
   button {
+    width: 224.467px;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -73,6 +74,9 @@
 
 .slide5 {
   @include hero-data("/libs/img/home-JQsO.jpg", #2ecc71, #26ab5f, false);
+  button {
+    width: 345.183px;
+  }
 }
 
 .slide6 {
