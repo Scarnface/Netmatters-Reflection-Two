@@ -37,6 +37,21 @@
     width: 750px;
   }
 
+  //COOKIE
+  .cookie-wrapper {
+    height: 490.95px;
+  }
+
+  .cookieChange {
+    width: 264px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .cookieClose {
+    width: 264px;
+  }
+
   //HEADER
   .header {
     @include header-v2;
