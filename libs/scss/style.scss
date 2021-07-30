@@ -8,7 +8,10 @@ $colour-primary: #333645;
 ==================================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-@import "partials/mixins";
+@import "partials/generalMixins";
+@import "partials/headerButtonMixins";
+@import "partials/headerSearchMixins";
+@import "partials/headerMixins";
 @import "partials/cookie";
 @import "partials/header";
 @import "partials/gallery";

@@ -1336,17 +1336,60 @@
     color: #fff;
     background-color: #333645;
     border-color: transparent;
+    user-select: none;
   }
   .header .hamburger-button:hover {
     background-color: #22242e;
   }
-  .header #hamburger-title {
+  .header #nav-icon {
+    width: 30px;
+    height: 56px;
     position: relative;
-    bottom: 2.5px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
-  .header #hamburger-bars {
-    font-size: 32px;
-    transform: scale(1.2, 0.8);
+  .header #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 55%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 14px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .header #nav-icon span:nth-child(1) {
+    top: 10px;
+  }
+  .header #nav-icon span:nth-child(2),
+  .header #nav-icon span:nth-child(3) {
+    top: 19.5px;
+  }
+  .header #nav-icon span:nth-child(4) {
+    top: 28px;
+  }
+  .header #nav-icon span:nth-child(5) {
+    top: 35px;
+    background-color: #333645;
+  }
+  .header #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .header #nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .header #nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .header #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
   .header .search-container {
     display: flex;
@@ -1484,17 +1527,60 @@
     color: #fff;
     background-color: #333645;
     border-color: transparent;
+    user-select: none;
   }
   .header .hamburger-button:hover {
     background-color: #22242e;
   }
-  .header #hamburger-title {
+  .header #nav-icon {
+    width: 30px;
+    height: 56px;
     position: relative;
-    bottom: 2.5px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
-  .header #hamburger-bars {
-    font-size: 32px;
-    transform: scale(1.2, 0.8);
+  .header #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 55%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 14px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .header #nav-icon span:nth-child(1) {
+    top: 10px;
+  }
+  .header #nav-icon span:nth-child(2),
+  .header #nav-icon span:nth-child(3) {
+    top: 19.5px;
+  }
+  .header #nav-icon span:nth-child(4) {
+    top: 28px;
+  }
+  .header #nav-icon span:nth-child(5) {
+    top: 35px;
+    background-color: #333645;
+  }
+  .header #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .header #nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .header #nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .header #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
   .header-row-1 a {
     align-self: flex-start;
@@ -1638,17 +1724,60 @@
     color: #fff;
     background-color: #333645;
     border-color: transparent;
+    user-select: none;
   }
   .header .hamburger-button:hover {
     background-color: #22242e;
   }
-  .header #hamburger-title {
+  .header #nav-icon {
+    width: 30px;
+    height: 56px;
     position: relative;
-    bottom: 2.5px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
-  .header #hamburger-bars {
-    font-size: 32px;
-    transform: scale(1.2, 0.8);
+  .header #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 55%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 14px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .header #nav-icon span:nth-child(1) {
+    top: 10px;
+  }
+  .header #nav-icon span:nth-child(2),
+  .header #nav-icon span:nth-child(3) {
+    top: 19.5px;
+  }
+  .header #nav-icon span:nth-child(4) {
+    top: 28px;
+  }
+  .header #nav-icon span:nth-child(5) {
+    top: 35px;
+    background-color: #333645;
+  }
+  .header #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .header #nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .header #nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .header #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
   .header .header-button {
     color: #fff;
@@ -1890,17 +2019,60 @@
     color: #fff;
     background-color: #333645;
     border-color: transparent;
+    user-select: none;
   }
   .header .hamburger-button:hover {
     background-color: #22242e;
   }
-  .header #hamburger-title {
+  .header #nav-icon {
+    width: 30px;
+    height: 56px;
     position: relative;
-    bottom: 2.5px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
-  .header #hamburger-bars {
-    font-size: 32px;
-    transform: scale(1.2, 0.8);
+  .header #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2.5px;
+    width: 55%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 14px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .header #nav-icon span:nth-child(1) {
+    top: 10px;
+  }
+  .header #nav-icon span:nth-child(2),
+  .header #nav-icon span:nth-child(3) {
+    top: 19.5px;
+  }
+  .header #nav-icon span:nth-child(4) {
+    top: 28px;
+  }
+  .header #nav-icon span:nth-child(5) {
+    top: 35px;
+    background-color: #333645;
+  }
+  .header #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .header #nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .header #nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .header #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
   .header .header-button {
     color: #fff;
