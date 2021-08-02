@@ -175,6 +175,7 @@
 
 .menu-column-1 {
   padding: 21px;
+  border-bottom: 1px solid rgba(27, 30, 43, 0.5);
   text-align: center;
 }
 
@@ -368,12 +369,15 @@
 
 .ml {
   text-transform: uppercase;
-  margin-bottom: 20px;
   border-radius: 3px;
   background-color: #262834;
   font-size: 1rem;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
+}
+
+.ml:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 
 .ml a {
@@ -389,6 +393,37 @@
   width: 100%;
   border-bottom: 1px solid rgba(80, 80, 80, 0.3);
   border-top: 1px solid #1b1e2b;
+}
+
+.m2 {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1;
+  width: 100%;
+  border-top: 1px solid rgba(80, 80, 80, 0.5);
+  border-bottom: 1px solid #1b1e2b;
+  cursor: pointer;
+}
+
+.m2:hover {
+  background-color: #3d404e;
+}
+
+.ml2 {
+  background-color: #262834;
+  font-size: 0.875rem;
+}
+
+.ml2 li {
+  padding: 15px 20px;
+  width: 100%;
+  border-top: 1px solid rgba(80, 80, 80, 0.5);
+  border-bottom: 1px solid #1b1e2b;
+  cursor: pointer;
+}
+
+.ml2 li i {
+  font-size: 0.5rem;
 }
 
 /* ================================= 
@@ -1911,6 +1946,15 @@
 @media only screen and (min-width: 992px) {
   .container {
     width: 970px;
+  }
+  .main.open {
+    left: -350px;
+  }
+  .menu-wrapper {
+    width: 350px;
+  }
+  .menu-column-1 {
+    display: none;
   }
   .header .header-row-1 {
     width: 100%;

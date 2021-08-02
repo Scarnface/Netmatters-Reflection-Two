@@ -60,6 +60,7 @@
 // The first (mobile only) menu column.
 .menu-column-1 {
   padding: 21px;
+  border-bottom: 1px solid rgba(27, 30, 43, 0.5);
   text-align: center;
 }
 
@@ -103,4 +104,32 @@
 // Style the mobile only card sub lists.
 .ml {
   @include modalServiceList();
+}
+
+.m2 {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1;
+  width: 100%;
+  border-top: 1px solid rgba(80, 80, 80, 0.5);
+  border-bottom: 1px solid rgba(27, 30, 43, 1);
+  cursor: pointer;
+  &:hover {
+    background-color: #3d404e;
+  }
+}
+
+.ml2 {
+  background-color: #262834;
+  font-size: 0.875rem;
+  li {
+    padding: 15px 20px;
+    width: 100%;
+    border-top: 1px solid rgba(80, 80, 80, 0.5);
+    border-bottom: 1px solid rgba(27, 30, 43, 1);
+    cursor: pointer;
+    i {
+      font-size: 0.5rem;
+    }
+  }
 }

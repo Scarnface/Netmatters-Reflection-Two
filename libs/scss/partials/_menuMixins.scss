@@ -24,12 +24,14 @@
 
 @mixin modalServiceList {
   text-transform: uppercase;
-  margin-bottom: 20px;
   border-radius: 3px;
   background-color: #262834;
   font-size: 1rem;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
   a {
     display: inline-block;
     padding-top: 10px;
