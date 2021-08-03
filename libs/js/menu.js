@@ -9,8 +9,6 @@ $(document).ready(function () {
     $(".menu-banner").toggleClass("open");
     // Adjust main page width for menu.
     $(".main").toggleClass("open");
-    // Disable body scroll.
-    bodyScrollLock.disableBodyScroll(targetElement);
   });
 
   // Listens for clicks on the modal and checks to see if the event target is the menu element.
@@ -22,8 +20,6 @@ $(document).ready(function () {
       $(".menu-banner").toggleClass("open");
       // Adjust main page width for menu.
       $(".main").toggleClass("open");
-      // Re-enable body scroll.
-      bodyScrollLock.enableBodyScroll(targetElement);
     }
   });
 });
