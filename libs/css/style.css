@@ -439,6 +439,18 @@
 /* ================================= 
   HEADER
 ==================================== */
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 209px;
+  background-color: #fff;
+  transition: transform 0.4s;
+}
+
 .header-wrapper {
   width: 100%;
   max-height: 168px;
@@ -469,7 +481,7 @@
   width: 154.8px;
   height: 99px;
   line-height: 1;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 }
 
 .header-services p:nth-of-type(1) {
@@ -478,7 +490,7 @@
 }
 
 .header-services p:nth-of-type(2) {
-  font-size: .625rem;
+  font-size: 0.625rem;
   padding-bottom: 1.6px;
   text-transform: uppercase;
 }
@@ -579,7 +591,7 @@
 }
 
 .header-services-info ul li {
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 15px 0 15px 22.5px;
 }
 

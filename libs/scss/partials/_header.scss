@@ -1,6 +1,18 @@
 /* ================================= 
   HEADER
 ==================================== */
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 209px; //! SET MOBILE FIRST AND UPDATE BREAKPOINTS ONCE FINISHED
+  background-color: #fff;
+  transition: transform 0.4s;
+}
+
 .header-wrapper {
   width: 100%;
   max-height: 168px;
@@ -32,13 +44,13 @@
   width: 154.8px;
   height: 99px;
   line-height: 1;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   p:nth-of-type(1) {
     font-size: 1.438rem;
     padding-bottom: 10px;
   }
   p:nth-of-type(2) {
-    font-size: .625rem;
+    font-size: 0.625rem;
     padding-bottom: 1.6px;
     text-transform: uppercase;
   }
@@ -56,7 +68,7 @@
 #hs3 {
   // Rotate to more closely match original icon
   p:nth-of-type(1) {
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
   }
   @include hs-colours(hs3, #d64541);
 }
@@ -89,7 +101,7 @@
     margin-right: auto;
     padding: 0;
     li {
-      font-size: .8em;
+      font-size: 0.8em;
       padding: 15px 0 15px 22.5px;
       &:nth-of-type(1) {
         padding: 15px 0 15px 17.5px;
@@ -109,11 +121,11 @@
 
 // The vertical line between elements
 .header-services-divider::before {
-    display: inline-block;
-    content: "";
-    height: 100%;
-    border-left: 1px solid #505050;
-    border-right: 1px solid #22242e;
+  display: inline-block;
+  content: "";
+  height: 100%;
+  border-left: 1px solid #505050;
+  border-right: 1px solid #22242e;
 }
 
 // Set the colours of the sub-menu bars
