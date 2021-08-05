@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // The element that scolling persists for.
-  const targetElement = document.querySelector(".menu-wrapper");
-
   $("#nav-icon").click(function () {
     // Toggle the main menu button between bars and cross styling.
     $("#nav-icon").toggleClass("open");

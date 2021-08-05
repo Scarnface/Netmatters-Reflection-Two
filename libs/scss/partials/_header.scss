@@ -10,7 +10,10 @@
   z-index: 2;
   height: 209px; //! SET MOBILE FIRST AND UPDATE BREAKPOINTS ONCE FINISHED
   background-color: #fff;
-  transition: transform 0.4s;
+}
+
+.header-scrolling {
+  transition: transform 0.3s;
 }
 
 .header-wrapper {
